@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: border-box;
+    font-family:'Josefin Sans', sans-serif;
+
+}
+
+// Declaracao de variaveis
+$corBody:#081b29;
+$menuA:#ededed;
+$menuHover:#00abf0;
+
+
+// Comecando a formatar body
+body{
+    background-color:$corBody;
+    color: $menuA;
+}
+
+// Comecando a formatar o header
+
+header{
+   background-color:$corBody ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10px #022f41;
+    padding-bottom:10px ;
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        padding: 1rem 3.5rem;
+        align-items: center;
+
+        
+.logo{
+    display: flex;
+    align-items: center;
+    box-flex: row wrap;
+    padding-left:50px;
+
+     a{
+        text-decoration: none;
+        color:$menuA;
+        font-weight: 500;
+        font-size: 25pt;
+        text-align: center;
+
+        &::before{
+            content:'';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100;
+            background-color: $corBody;
+            animation: showRight 1s ease forwords;
+            animation-delay:1s ;
+        }
+    }
+}
+
+ul{
+    display: flex;
+   list-style: none;
+    flex-flow: row wrap;
+    padding: 0 40px;
+
+    li a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 10px;
+        font-size: 14pt;
+        color: $menuA;
+        transition: .5s;
+        font-weight: bold;
+
+        &:hover{
+            color: $menuHover;
+        }
+    }
+    .ativo{
+        color: $menuHover;
+    }
+}
+    } //Fim navBar
+
+} //Fim Header
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-top:150px ;
+    padding-left: 60px;
+    // border: 1px solid red;
+    padding-bottom:20px ;
+
+    .home-content{
+        flex:50%;
+        padding: 10px;
+
+        h2{
+            font-size: 54px;
+            font-weight:bolder;
+    
+        }
+        h3{
+            font-size: 32px;
+            font-weight:bolder;
+            color:$menuHover;
+        }
+        p{
+            font-size:18px;
+            margin: 20px 0 40px;
+        }
+
+        .btn-box{
+            width: 340px;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+
+            a{
+                text-decoration: none;
+                display: inline-flex;
+                font-size: 16pt;
+                color:$corBody;
+                font-weight: bolder;
+               justify-content: center;
+               align-items: center;
+                width: 150px;
+                height: 100%;
+                background-color: $menuHover;
+                border: 1px solid $menuHover;
+                border-radius: 5px;
+                &:hover{
+                    background-color:$corBody;
+                    color: $menuHover;
+                    transition: .6s;
+                    transform: translateY(-5px);
+                }
+            }
+            .conver{
+                background: transparent;
+                color: $menuHover;
+                &:hover{
+                    background-color: $menuHover;
+                    color: $corBody;
+                    transition: .6s;
+                    transform: translateY(-5px);
+                }
+            }
+        }
+
+        .redes-sociais{
+            background-color: #00abf0;
+            position: absolute;
+            bottom: 40px;
+            width: 170px;
+        }
+
+    }
+
+    .home-img{
+
+        // border: 1px solid orange;
+        flex: 40%;
+        margin:2%;
+        text-align: center;
+
+        img{
+            width: 400px;
+            height: 400px;
+        }
+    }
+}
+
+// Media Query
+@media screen and (max-width:700px){
+  .navbar .nav-list{
+        display: none;
+    }
+    .navbar .logo{
+        text-align: center;
+        padding-left:10px;
+    }
+
+    .home{
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+        padding-top:140px ;
+        padding-left:8px;
+        // border: 1px solid red;
+        padding-bottom:20px ;
+        overflow-x:hidden ;
+    }
+    .home-img{
+        display: flex;
+        flex: column wrap;
+        align-items: center;
+    }
+    .home-img img{
+        width: 200px;
+        height: 300px;
+        margin-right:100px;
+    }
+
+}

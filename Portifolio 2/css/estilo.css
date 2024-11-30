@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+header {
+  padding: 40px 4%;
+}
+
+header > .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+header a {
+  color: #7d7d7d;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+header a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.container {
+  gap: 5px;
+}
+.container .logo {
+  flex: 20%;
+}
+.container .logo h1 {
+  font-size: 28pt;
+  font-weight: 900;
+}
+.container .logo h1 a {
+  color: #fff;
+}
+.container .logo h1 span {
+  color: #00ff08;
+}
+.container ul {
+  flex: 40%;
+  display: flex;
+  list-style: none;
+}
+.container ul li {
+  display: inline-block;
+  margin: 5px;
+  padding: 0 20px;
+}
+.container .btn-contato {
+  flex: 20%;
+}
+.container .btn-contato button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  background: #00ff08;
+  cursor: pointer;
+  color: #313030;
+}
+.container .btn-contato button:hover {
+  box-shadow: 0 0 14px #00ff08;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.top-do-site {
+  padding: 40px 4%;
+  display: flex;
+  flex-flow: column wrap;
+}
+.top-do-site .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  gap: 30px;
+}
+.top-do-site .flex .text-top-site {
+  flex: 40%;
+  padding-top: 20px;
+}
+.top-do-site .flex .text-top-site h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 40px;
+  padding-bottom: 25px;
+  text-align: left;
+}
+.top-do-site .flex .text-top-site h2 span {
+  color: #00ff08;
+  font-size: 80px;
+}
+.top-do-site .flex .text-top-site p {
+  color: #fff;
+  margin-bottom: 40px;
+  line-height: 25px;
+  margin: 20px 0;
+}
+.top-do-site .flex .text-top-site a {
+  color: #7d7d7d;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+.top-do-site .flex .text-top-site a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+.top-do-site .flex .img-top-site {
+  flex: 40%;
+  padding-top: 20px;
+  text-align: center;
+}
+.top-do-site .flex .img-top-site img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  box-shadow: 0 0 20px #00ff08;
+  border-radius: 200px;
+}
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+.especialidade {
+  padding: 40px 4%;
+}
+.especialidade h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 38px;
+  text-align: center;
+  margin-top: 50px;
+}
+.especialidade h2 span {
+  color: #00ff08;
+}
+.especialidade .flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.especialidade .especialidades-box {
+  background: transparent;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2117647059);
+  color: #fff;
+  padding: 40px;
+  margin-top: 30px;
+  border-radius: 20px;
+  transition: 0.3s;
+  flex: 20%;
+}
+.especialidade .especialidades-box:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3647058824);
+}
+.especialidade .especialidades-box i {
+  font-size: 70px;
+  color: #00ff08;
+}
+.especialidade .especialidades-box h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.sobre {
+  padding: 70px 4%;
+}
+.sobre .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+.sobre .flex .img-sobre {
+  text-align: center;
+  flex: 40%;
+}
+.sobre .flex .txt-sobre {
+  color: #fff;
+  flex: 40%;
+}
+.sobre .flex .txt-sobre h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.sobre .flex .txt-sobre h2 span {
+  color: #00ff08;
+}
+.sobre .flex .txt-sobre p {
+  line-height: 25px;
+  margin: 20px 0;
+  text-align: justify;
+}
+.sobre .flex .txt-sobre .btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: none;
+  font-size: 20pt;
+  background-color: #00ff08;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 0.2s;
+}
+.sobre .flex .txt-sobre .btn-social button:hover {
+  transform: scale(1.05);
+  transform: translateY(-15px);
+  box-shadow: 0 0 10px #00ff08;
+}
+
+.projetos {
+  padding: 70px 4%;
+  box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.2431372549);
+}
+.projetos h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.projetos h2 span {
+  color: #00ff08;
+}
+.projetos .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 40px;
+}
+.projetos .flex .img-projeto {
+  width: 300px;
+  height: 480px;
+  background-position:100% 0%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  transition:4s;
+  cursor: pointer;
+  border-radius: 20px;
+  position: relative;
+}
+.projetos .flex .img-projeto .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.7215686275);
+  color: #fff;
+  opacity: 0;
+  transition: 0.4s;
+}
+.projetos .flex .img-projeto .overlay:hover {
+  opacity: 1;
+}
+.projetos .flex .img-projeto:hover {
+  background-position:100% 100%;
+}
+
+.formulario {
+  padding: 80px 4%;
+}
+.formulario h2 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.formulario h2 span {
+  color: #00ff08;
+}
+.formulario form {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+  flex-flow: column wrap;
+  max-width: 500px;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+.formulario form input {
+  max-width: 100%;
+  background-color: rgba(49, 48, 48, 0.9607843137);
+  border: 0;
+  outline: 0;
+  padding: 20px 18px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+.formulario form input::-moz-placeholder {
+  color: #6e6b6b;
+}
+.formulario form input::placeholder {
+  color: #6e6b6b;
+}
+.formulario form textarea {
+  max-width: 100%;
+  background-color: rgba(49, 48, 48, 0.9607843137);
+  border: 0;
+  outline: 0;
+  padding: 20px 18px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  resize: none;
+  height: 150px;
+}
+.formulario form textarea::-moz-placeholder {
+  color: #6e6b6b;
+}
+.formulario form textarea::placeholder {
+  color: #6e6b6b;
+}
+.formulario form .btn-enviar {
+  padding-top: 20px;
+  text-align: center;
+}
+.formulario form .btn-enviar input {
+  color: #000;
+  text-decoration: none;
+  background-color: #00ff08;
+  font-weight: 800;
+  padding: 16px 18px;
+  transition: 0.2s;
+}
+.formulario form .btn-enviar input:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+footer {
+  padding: 60px 4%;
+  box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.2431372549);
+}
+footer .flex {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+footer .flex h2 {
+  font-size: 28pt;
+  font-weight: 900;
+  color: #fff;
+}
+footer .flex h2 span {
+  color: #00ff08;
+}
+footer .flex .btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: none;
+  font-size: 20pt;
+  background-color: #00ff08;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 0.2s;
+}
+footer .flex .btn-social button:hover {
+  transform: scale(1.05);
+  transform: translateY(-15px);
+  box-shadow: 0 0 10px #00ff08;
+}
+footer .borda {
+  border-top: 2px solid #00ff08;
+}
+footer .line-footer {
+  padding: 20px 0;
+}
+footer .line-footer p {
+  color: #00ff08;
+}
+footer .line-footer p i {
+  padding-right: 10px;
+  font-size: 23px;
+}
+footer .line-footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .line-footer .copy {
+  text-align: center;
+  padding-top: 10px;
+}/*# sourceMappingURL=estilo.css.map */
